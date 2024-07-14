@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  font-family: "lato", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.nav .logo_img {
+  width: 80px;
+}
+
+.main {
+  padding: 0px 25px;
+}
+
+.Header_Cover {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(83, 91, 81, 0.8), rgba(43, 52, 48, 0.8)), url(../images/Cover.jpg);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.Text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Text-box .Btn_header {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  background-color: #fff;
+  color: #777;
+  border-radius: 100px;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.heading-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 26px;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  margin-bottom: 10px;
+}
+
+.heading-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 14px;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  70% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  70% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.About_us {
+  background-color: #eee;
+  padding: 16rem 0;
+  margin-top: -20vh;
+  text-align: center;
+}
+.About_us .content {
+  text-align: start;
+}
+.About_us .content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #777;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+.About_us .content p {
+  color: #bab5b5;
+  font-size: 1.5rem;
+}
+.About_us .image {
+  padding: 5px;
+}
+.About_us .image .Image1 {
+  border-radius: 3px;
+  width: 350px;
+  transition: all 0.2s;
+  border-radius: 5px;
+  box-shadow: 60px -16px #cfcdcd;
+}
+
+.Features {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(83, 91, 81, 0.8), rgba(43, 52, 48, 0.8)), url(/Assets/images/bc.jpg);
+  background-position: top;
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -7rem;
+}
+.Features > * {
+  transform: skewY(7deg);
+}
+
+.Features_box {
+  background-color: #d6ebdb;
+  text-align: center;
+  border-radius: 3px;
+  transition: transform 0.3s;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin: 8px;
+  padding: 1.5rem;
+}
+.Features_box .img {
+  width: 10rem;
+  margin-bottom: 0.5rem;
+  color: #30b381;
+  padding: 5px;
+}
+.Features_box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.Features_box h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgb(31, 31, 31);
+}
+.Features_box p {
+  color: dimgray;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.qulity {
+  background-color: #eee;
+  padding: 20rem 0 5rem 0;
+  margin-top: -20vh;
+  text-align: center;
+}
+.qulity h3 {
+  font-size: 6rem;
+  padding: 1rem;
+  color: #444444;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+.qulity p {
+  font-size: 1.5rem;
+  color: #777;
+}
+.qulity .Btns {
+  padding: 1rem;
+}
+.qulity .Btns Button {
+  padding: 1.2rem 3rem;
+  background-color: #777;
+  color: #fff;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+.qulity .Btns Button:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #777;
+}
+
+.Reviews {
+  position: relative;
+  background-color: #eee;
+  padding: 16rem 0;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(62, 67, 61, 0.8), rgba(43, 52, 48, 0.8));
+  background-position: top;
+  background-size: cover;
+}
+.Reviews h3 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.Reviews .Box_Review {
+  padding: 25px;
+}
+.Reviews .Box_Review img {
+  width: 180px;
+  border-radius: 50%;
+}
+.Reviews .Box_Review .comment {
+  font-size: 1rem;
+  color: #777;
+  margin: 8px;
+  border: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
+}
+.Reviews .Box_Review .name {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.contact_us {
+  text-align: center;
+  padding: 6rem;
+}
+.contact_us P {
+  font-size: 3.5rem;
+  color: #444444;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+.contact_us .disc {
+  font-size: 1.5rem;
+  color: #777;
+}
+.contact_us .inputs {
+  text-align: center;
+}
+.contact_us .inputs .input {
+  padding: 1rem 15rem;
+  outline: 0;
+  border: 0px;
+  background-color: #eee;
+  margin: 1rem 0;
+}
+.contact_us .inputs .text_Area {
+  padding: 1rem 15.5rem;
+  outline: 0;
+  border: 0px;
+  background-color: #eee;
+  margin: 1rem 0;
+}
+.contact_us .inputs .btn {
+  padding: 1rem 15rem;
+  outline: 0;
+  border: 0px;
+  background-color: #333232;
+  margin: 1.5rem 0;
+  color: #fff;
+}
+.contact_us .inputs .btn:hover {
+  background-color: #fff;
+  color: 333232;
+}
+
+footer {
+  background-color: #777;
+  color: #fff;
+  padding: 8rem 0 4rem 0;
+}
+footer img {
+  width: 200px;
+}
+footer h5 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+footer p {
+  padding: 7px;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .social img {
+  width: 80px;
+  border-radius: 50px;
+}
+footer .copyright {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
