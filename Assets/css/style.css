@@ -80,7 +80,7 @@ header {
 }
 @media (max-width: 993px) {
   .Head {
-    height: 190vh;
+    height: 170vh;
   }
 }
 .Head .content {
@@ -180,8 +180,18 @@ header {
     display: none;
   }
 }
+@media (max-width: 993px) {
+  .App_Features .Feature_items {
+    text-align: center;
+  }
+}
 .App_Features .Feature_items .item_Box .img {
   padding: 10px 0;
+}
+@media (max-width: 993px) {
+  .App_Features .Feature_content {
+    text-align: center;
+  }
 }
 
 .Money_Transfer {
