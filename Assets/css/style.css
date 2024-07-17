@@ -247,9 +247,9 @@ header {
   background: radial-gradient(116.18% 118% at 50% 100%, rgba(12, 13, 107, 0.1) 0%, rgba(71, 9, 79, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
 }
 .Clients h4 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 150px;
+  margin-top: 20%;
 }
 
 .questions {
@@ -273,7 +273,7 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .Box {
@@ -442,8 +442,9 @@ footer {
   height: 350px;
   width: 550px;
   background-color: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 0 auto;
+  border-radius: 8px;
 }
 
 .Stars {
