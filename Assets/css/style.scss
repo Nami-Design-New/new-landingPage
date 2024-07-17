@@ -78,6 +78,7 @@ header {
 }
 
 .Head {
+  height: 75vh;
   overflow: hidden;
   background: radial-gradient(
     116.18% 118% at 50% 100%,
@@ -86,7 +87,7 @@ header {
     rgba(241, 244, 253, 0.07) 82.52%
   );
   @media (max-width: 993px) {
-    height: 120vh;
+    height: 100vh;
   }
 
   .content {
