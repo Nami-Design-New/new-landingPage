@@ -190,6 +190,11 @@ header {
 .Money_Transfer .content_transfer {
   margin: 5rem 0 2rem 0;
 }
+@media (max-width: 993px) {
+  .Money_Transfer .content_transfer {
+    text-align: center;
+  }
+}
 .Money_Transfer .content_transfer h3 {
   color: #0b0f19;
   font-size: 2.3rem;
@@ -351,6 +356,12 @@ header {
   }
 }
 
+@media (max-width: 993px) {
+  .input-group {
+    display: none;
+  }
+}
+
 h6 {
   color: #0b0f19;
   font-size: 1.5rem;
@@ -462,12 +473,16 @@ footer {
 .Client_Card {
   text-align: start;
   padding: 3rem;
-  height: 350px;
-  width: 550px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 0 auto;
   border-radius: 8px;
+}
+@media (max-width: 993px) {
+  .Client_Card {
+    text-align: center;
+    padding: 0 10px;
+  }
 }
 
 .Stars {
@@ -476,16 +491,32 @@ footer {
 
 p {
   color: #565973;
+  padding: 5px;
   font-size: 1.2rem;
+}
+@media (max-width: 993px) {
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 .profile {
   display: flex;
   align-items: center;
 }
+@media (max-width: 993px) {
+  .profile .name {
+    font-size: 1rem;
+  }
+}
 .profile .name h6 {
   font-size: 1.3rem;
   color: #0b0f19;
+}
+@media (max-width: 993px) {
+  .profile .name h6 {
+    font-size: 1rem;
+  }
 }
 
 .swipers .title {

@@ -206,6 +206,10 @@ header {
   margin: 2rem 0;
   .content_transfer {
     margin: 5rem 0 2rem 0;
+    @media (max-width: 993px) {
+      text-align: center;
+    }
+
     h3 {
       color: #0b0f19;
       font-size: 2.3rem;
@@ -371,6 +375,11 @@ header {
     text-align: center;
   }
 }
+.input-group {
+  @media (max-width: 993px) {
+    display: none;
+  }
+}
 
 h6 {
   color: #0b0f19;
@@ -497,27 +506,40 @@ footer {
 .Client_Card {
   text-align: start;
   padding: 3rem;
-  height: 350px;
-  width: 550px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 0 auto;
   border-radius: 8px;
+  @media (max-width: 993px) {
+    text-align: center;
+    padding: 0 10px;
+  }
 }
 .Stars {
   padding: 12px 0;
 }
 p {
   color: #565973;
+  padding: 5px;
   font-size: 1.2rem;
+  @media (max-width: 993px) {
+    font-size: 0.8rem;
+  }
 }
 .profile {
   display: flex;
   align-items: center;
   .name {
+    @media (max-width: 993px) {
+      font-size: 1rem;
+    }
+
     h6 {
       font-size: 1.3rem;
       color: #0b0f19;
+      @media (max-width: 993px) {
+        font-size: 1rem;
+      }
     }
   }
 }
