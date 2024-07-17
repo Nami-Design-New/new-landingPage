@@ -88,8 +88,13 @@ header {
   flex-direction: column;
   gap: 25px;
 }
+@media (max-width: 993px) {
+  .Head .content {
+    text-align: center;
+  }
+}
 .Head h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 1.2rem;
   font-weight: 600;
   line-height: 1.3;
@@ -120,15 +125,19 @@ header {
 .Head .Discover p {
   margin: 0;
 }
+.Head .Images {
+  display: flex;
+  justify-content: space-evenly;
+}
 .Head .Images img {
-  width: 200px;
+  width: 40%;
 }
 .Head .mob_img {
   position: relative;
 }
 .Head .mob_img img {
   position: absolute;
-  width: 700px;
+  width: 100%;
 }
 .Head .mob_img .Img_one {
   z-index: 999;
@@ -144,13 +153,12 @@ header {
   justify-content: space-between;
 }
 .Boxes .Box {
-  padding: 2.5rem 2.5rem;
+  padding: 18px;
   border: 1px solid #eee;
   text-align: center;
-  width: 250px;
-  margin: 20px;
   border-radius: 10px;
   transition: transform 0.3s;
+  margin: 14px 0;
 }
 .Boxes .Box:hover {
   transform: translateY(-1.5rem) scale(1.03);
@@ -380,11 +388,16 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
 }
 .Footer_menu .Footer_menu_item {
   color: #0b0f19;
   font-size: 1.4rem;
+}
+@media (max-width: 993px) {
+  .Footer_menu .Footer_menu_item {
+    font-size: 0.8rem;
+  }
 }
 .Footer_menu .Footer_menu_item:hover {
   color: #6267f0;
@@ -395,12 +408,17 @@ footer {
   margin-top: 2rem;
   margin-inline-start: 1rem;
 }
+@media (max-width: 993px) {
+  .googel img {
+    width: 150px;
+  }
+}
 
 .social_icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   margin-top: 3rem;
 }
 .social_icons .icon {
