@@ -80,7 +80,7 @@ header {
 }
 @media (max-width: 993px) {
   .Head {
-    height: 170vh;
+    height: 120vh;
   }
 }
 .Head .content {
