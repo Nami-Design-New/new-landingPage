@@ -2,7 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -78,17 +79,12 @@ header {
 }
 
 .Head {
-  height: 75vh;
-  overflow: hidden;
   background: radial-gradient(
     116.18% 118% at 50% 100%,
     rgba(12, 13, 107, 0.1) 0%,
     rgba(71, 9, 79, 0.05) 41.83%,
     rgba(241, 244, 253, 0.07) 82.52%
   );
-  @media (max-width: 993px) {
-    height: 100vh;
-  }
 
   .content {
     display: flex;
@@ -108,7 +104,7 @@ header {
   p {
     margin-bottom: 3rem;
     color: #565973;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: "Manrope", sans-serif;
   }
   .Discover {
@@ -140,11 +136,14 @@ header {
   .mob_img {
     position: relative;
     img {
-      position: absolute;
       width: 100%;
     }
     .Img_one {
-      z-index: 999;
+    }
+
+    .img_two {
+      position: absolute;
+      right: 0;
     }
   }
 }
@@ -183,9 +182,13 @@ header {
 .App_Features {
   .Feature_img {
     position: relative;
-    img {
+    .img_one {
+      width: 100%;
+    }
+    .img_two {
+      width: 100%;
       position: absolute;
-      width: 80%;
+      right: 0;
     }
     @media (max-width: 993px) {
       display: none;
@@ -197,16 +200,32 @@ header {
     }
 
     .item_Box {
+      display: flex;
+      align-items: start;
+      gap: 8px;
+      padding: 10px;
       .img {
-        padding: 10px 0;
+        padding: 10px;
+        background-color: #f3f6ff;
+        border-radius: 8px;
+        svg {
+          text-align: center;
+        }
       }
       .title {
+        @media (max-width: 993px) {
+        }
+
         h3 {
+          font-size: 2rem;
+          font-weight: 600;
+
           @media (max-width: 993px) {
             font-size: 1rem;
           }
         }
         p {
+          font-size: 1rem;
           @media (max-width: 993px) {
             font-size: 0.7rem;
           }
@@ -220,22 +239,22 @@ header {
     }
   }
   h2 {
+    font-size: 3rem;
+    font-weight: 600;
+
     @media (max-width: 993px) {
-      font-size: 1rem;
+      font-size: 2rem;
     }
-  }
-  p {
   }
 }
 
 //Money_Transfer
 
 .Money_Transfer {
-  margin: 2rem 0;
+  margin: 4rem 0;
   .content_transfer {
-    margin: 5rem 0 2rem 0;
+    margin: 0 0 3rem 0;
     @media (max-width: 993px) {
-      text-align: center;
     }
 
     h3 {
@@ -275,19 +294,16 @@ header {
 
   .images_transfer {
     position: relative;
+
     img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 85%;
-      @media (max-width: 993px) {
-        position: relative;
-      }
+      max-width: 100%;
+    }
+    .img_one {
+      width: 100%;
     }
     .img_Two {
-      @media (max-width: 993px) {
-        display: none;
-      }
+      position: absolute;
+      right: 0;
     }
   }
 }
@@ -304,9 +320,26 @@ header {
   }
 }
 
+//recive contact
+.Recive_contact {
+  .images_Contact {
+    position: relative;
+    img {
+      max-width: 100%;
+    }
+    .img_Two {
+      position: absolute;
+      right: 0;
+    }
+  }
+  .content_Contact {
+    margin-top: 4rem;
+  }
+}
+
 //clients  section
 .Clients {
-  padding: 25px;
+  padding: 25px 0;
   align-items: center;
   background: radial-gradient(
     116.18% 118% at 50% 100%,
@@ -318,7 +351,7 @@ header {
   h4 {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-top: 20%;
+    text-align: center;
   }
 }
 
@@ -388,8 +421,9 @@ header {
 
 //Subscribe
 .Subscribe {
-  padding: 4rem;
+  padding: 2rem;
 }
+
 .sub_box {
   display: flex;
   align-items: center;
@@ -400,23 +434,18 @@ header {
   @media (max-width: 993px) {
     display: block;
     padding: 20px;
-    text-align: center;
   }
 }
-.input-group {
-  @media (max-width: 993px) {
-    display: none;
-  }
-}
-
-h6 {
-  color: #0b0f19;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 10px;
-  margin: 5px;
-  @media (max-width: 993px) {
-    margin: 10px 0;
+.sub_head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 15px;
+  h6 {
+    color: #0b0f19;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 5px;
   }
 }
 
@@ -532,16 +561,13 @@ footer {
 // Client Swiper
 
 .Client_Card {
-  text-align: start;
-  padding: 3rem;
+  padding: 2rem 1rem;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 0 auto;
   border-radius: 8px;
-  @media (max-width: 993px) {
-    text-align: center;
-    padding: 0 10px;
-  }
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 .Stars {
   padding: 12px 0;
@@ -557,6 +583,7 @@ p {
 .profile {
   display: flex;
   align-items: center;
+  justify-content: center;
   .name {
     @media (max-width: 993px) {
       font-size: 1rem;
@@ -565,9 +592,14 @@ p {
     h6 {
       font-size: 1.3rem;
       color: #0b0f19;
+      padding: 0;
+
       @media (max-width: 993px) {
         font-size: 1rem;
       }
+    }
+    p {
+      padding: 0;
     }
   }
 }
@@ -576,7 +608,6 @@ p {
 .swipers {
   .title {
     text-align: center;
-    padding: 10px 0;
     font-size: 1.5rem;
   }
 }
@@ -596,12 +627,13 @@ p {
     height: 805px;
   }
   h4 {
-    font-size: 1.3rem;
-    padding: 7px 0;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: 600;
   }
   p {
     font-size: 0.9rem;
-    padding: 7px 0;
+    padding: 8px 0;
   }
 }
 

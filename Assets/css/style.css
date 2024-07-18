@@ -2,7 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -74,14 +75,7 @@ header {
 }
 
 .Head {
-  height: 75vh;
-  overflow: hidden;
   background: radial-gradient(116.18% 118% at 50% 100%, rgba(12, 13, 107, 0.1) 0%, rgba(71, 9, 79, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
-}
-@media (max-width: 993px) {
-  .Head {
-    height: 100vh;
-  }
 }
 .Head .content {
   display: flex;
@@ -103,7 +97,7 @@ header {
 .Head p {
   margin-bottom: 3rem;
   color: #565973;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Manrope", sans-serif;
 }
 .Head .Discover {
@@ -136,11 +130,11 @@ header {
   position: relative;
 }
 .Head .mob_img img {
-  position: absolute;
   width: 100%;
 }
-.Head .mob_img .Img_one {
-  z-index: 999;
+.Head .mob_img .img_two {
+  position: absolute;
+  right: 0;
 }
 
 .Boxes {
@@ -171,9 +165,13 @@ header {
 .App_Features .Feature_img {
   position: relative;
 }
-.App_Features .Feature_img img {
+.App_Features .Feature_img .img_one {
+  width: 100%;
+}
+.App_Features .Feature_img .img_two {
+  width: 100%;
   position: absolute;
-  width: 80%;
+  right: 0;
 }
 @media (max-width: 993px) {
   .App_Features .Feature_img {
@@ -185,13 +183,31 @@ header {
     text-align: center;
   }
 }
+.App_Features .Feature_items .item_Box {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  padding: 10px;
+}
 .App_Features .Feature_items .item_Box .img {
-  padding: 10px 0;
+  padding: 10px;
+  background-color: #f3f6ff;
+  border-radius: 8px;
+}
+.App_Features .Feature_items .item_Box .img svg {
+  text-align: center;
+}
+.App_Features .Feature_items .item_Box .title h3 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 @media (max-width: 993px) {
   .App_Features .Feature_items .item_Box .title h3 {
     font-size: 1rem;
   }
+}
+.App_Features .Feature_items .item_Box .title p {
+  font-size: 1rem;
 }
 @media (max-width: 993px) {
   .App_Features .Feature_items .item_Box .title p {
@@ -203,21 +219,21 @@ header {
     text-align: center;
   }
 }
+.App_Features h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
 @media (max-width: 993px) {
   .App_Features h2 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
+
 .Money_Transfer {
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 .Money_Transfer .content_transfer {
-  margin: 5rem 0 2rem 0;
-}
-@media (max-width: 993px) {
-  .Money_Transfer .content_transfer {
-    text-align: center;
-  }
+  margin: 0 0 3rem 0;
 }
 .Money_Transfer .content_transfer h3 {
   color: #0b0f19;
@@ -255,20 +271,14 @@ header {
   position: relative;
 }
 .Money_Transfer .images_transfer img {
+  max-width: 100%;
+}
+.Money_Transfer .images_transfer .img_one {
+  width: 100%;
+}
+.Money_Transfer .images_transfer .img_Two {
   position: absolute;
-  top: 0;
   right: 0;
-  width: 85%;
-}
-@media (max-width: 993px) {
-  .Money_Transfer .images_transfer img {
-    position: relative;
-  }
-}
-@media (max-width: 993px) {
-  .Money_Transfer .images_transfer .img_Two {
-    display: none;
-  }
 }
 
 .Btn_Transfer {
@@ -283,15 +293,29 @@ header {
   width: 20px;
 }
 
+.Recive_contact .images_Contact {
+  position: relative;
+}
+.Recive_contact .images_Contact img {
+  max-width: 100%;
+}
+.Recive_contact .images_Contact .img_Two {
+  position: absolute;
+  right: 0;
+}
+.Recive_contact .content_Contact {
+  margin-top: 4rem;
+}
+
 .Clients {
-  padding: 25px;
+  padding: 25px 0;
   align-items: center;
   background: radial-gradient(116.18% 118% at 50% 100%, rgba(12, 13, 107, 0.1) 0%, rgba(71, 9, 79, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
 }
 .Clients h4 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 20%;
+  text-align: center;
 }
 
 .questions {
@@ -361,7 +385,7 @@ header {
 }
 
 .Subscribe {
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .sub_box {
@@ -376,27 +400,20 @@ header {
   .sub_box {
     display: block;
     padding: 20px;
-    text-align: center;
   }
 }
 
-@media (max-width: 993px) {
-  .input-group {
-    display: none;
-  }
+.sub_head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 15px;
 }
-
-h6 {
+.sub_head h6 {
   color: #0b0f19;
   font-size: 1.5rem;
-  font-weight: 500;
-  padding: 10px;
+  font-weight: 600;
   margin: 5px;
-}
-@media (max-width: 993px) {
-  h6 {
-    margin: 10px 0;
-  }
 }
 
 footer {
@@ -495,18 +512,13 @@ footer {
 }
 
 .Client_Card {
-  text-align: start;
-  padding: 3rem;
+  padding: 2rem 1rem;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 0 auto;
   border-radius: 8px;
-}
-@media (max-width: 993px) {
-  .Client_Card {
-    text-align: center;
-    padding: 0 10px;
-  }
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
 .Stars {
@@ -527,6 +539,7 @@ p {
 .profile {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 993px) {
   .profile .name {
@@ -536,16 +549,19 @@ p {
 .profile .name h6 {
   font-size: 1.3rem;
   color: #0b0f19;
+  padding: 0;
 }
 @media (max-width: 993px) {
   .profile .name h6 {
     font-size: 1rem;
   }
 }
+.profile .name p {
+  padding: 0;
+}
 
 .swipers .title {
   text-align: center;
-  padding: 10px 0;
   font-size: 1.5rem;
 }
 
@@ -566,12 +582,13 @@ p {
   height: 805px;
 }
 .swiper-slide h4 {
-  font-size: 1.3rem;
-  padding: 7px 0;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: 600;
 }
 .swiper-slide p {
   font-size: 0.9rem;
-  padding: 7px 0;
+  padding: 8px 0;
 }
 
 .swiper_frame {
