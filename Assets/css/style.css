@@ -316,6 +316,16 @@ header {
 .Recive_contact .content_Contact {
   margin-top: 4rem;
 }
+.Recive_contact .content_Contact h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.Recive_contact .content_Contact .Feature_items .item_Box .img {
+  padding: 10px;
+  background-color: #f3f6ff;
+  border-radius: 8px;
+  text-align: center;
+}
 
 .Clients {
   padding: 25px 0;
@@ -335,10 +345,16 @@ header {
 .title {
   text-align: start;
 }
+@media (max-width: 993px) {
+  .title {
+    text-align: center;
+  }
+}
 .title h5 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  line-height: 1.4;
 }
 .title p {
   color: #565973;
@@ -350,6 +366,12 @@ header {
   align-items: center;
   gap: 15px;
   padding: 20px 0;
+}
+@media (max-width: 993px) {
+  .contact_Boxes {
+    justify-content: space-evenly;
+    text-align: center;
+  }
 }
 
 .Box {
@@ -419,7 +441,6 @@ header {
   color: #0b0f19;
   font-size: 1.4rem;
   font-weight: 600;
-  margin: 5px;
 }
 @media (max-width: 993px) {
   .sub_head h6 {
@@ -428,7 +449,7 @@ header {
 }
 
 footer {
-  padding: 35px 0px;
+  padding: 15px 0px;
 }
 
 .footer_nav {
@@ -599,7 +620,7 @@ p {
 }
 .swiper-slide p {
   font-size: 0.9rem;
-  padding: 8px;
+  padding: 8px 12px;
 }
 
 .swiper_frame {

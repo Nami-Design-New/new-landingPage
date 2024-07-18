@@ -259,8 +259,6 @@ header {
   margin: 4rem 0;
   .content_transfer {
     margin: 0 0 3rem 0;
-    @media (max-width: 993px) {
-    }
 
     h3 {
       color: #0b0f19;
@@ -339,6 +337,20 @@ header {
   }
   .content_Contact {
     margin-top: 4rem;
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .Feature_items {
+      .item_Box {
+        .img {
+          padding: 10px;
+          background-color: #f3f6ff;
+          border-radius: 8px;
+          text-align: center;
+        }
+      }
+    }
   }
 }
 
@@ -367,10 +379,15 @@ header {
 }
 .title {
   text-align: start;
+  @media (max-width: 993px) {
+    text-align: center;
+  }
+
   h5 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    line-height: 1.4;
   }
   p {
     color: #565973;
@@ -383,6 +400,10 @@ header {
   align-items: center;
   gap: 15px;
   padding: 20px 0;
+  @media (max-width: 993px) {
+    justify-content: space-evenly;
+    text-align: center;
+  }
 }
 .Box {
   background-color: #fff;
@@ -449,7 +470,6 @@ header {
     color: #0b0f19;
     font-size: 1.4rem;
     font-weight: 600;
-    margin: 5px;
     @media (max-width: 993px) {
       font-size: 0.8rem;
     }
@@ -458,7 +478,7 @@ header {
 
 //Footer
 footer {
-  padding: 35px 0px;
+  padding: 15px 0px;
 }
 .footer_nav {
   display: flex;
@@ -640,7 +660,7 @@ p {
   }
   p {
     font-size: 0.9rem;
-    padding: 8px;
+    padding: 8px 12px;
   }
 }
 
