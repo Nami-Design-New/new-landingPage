@@ -24,7 +24,7 @@ header {
 .main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
 }
 
 .navbar {
@@ -610,8 +610,8 @@ p {
   align-items: center;
 }
 .swiper-slide img {
-  width: 382px;
-  height: 805px;
+  width: 395px;
+  height: 795px;
 }
 .swiper-slide h4 {
   font-size: 1.2rem;
@@ -631,9 +631,9 @@ p {
   height: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 5px;
 }
 .swiper_frame img {
   width: 380px;
-  height: 785px;
+  height: 786px;
 }/*# sourceMappingURL=style.css.map */
