@@ -7,6 +7,12 @@
   font-style: normal;
 }
 
+.title h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -450,15 +456,6 @@ header {
 .Card .Card_side .Image img {
   width: 150px;
 }
-.Card .Card_side .blue {
-  background-image: linear-gradient(to right bottom, #06255c, #2a333d);
-}
-.Card .Card_side .grenn {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-}
-.Card .Card_side .white {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
-}
 .Card .Card_side .Details {
   padding: 2rem;
 }
@@ -509,10 +506,6 @@ header {
   padding: 1rem 3rem;
   border-radius: 50px;
   font-size: 1rem;
-}
-.Card .Back .Btn:hover {
-  background: linear-gradient(to right bottom, #06255c, #2a333d);
-  color: #fff;
 }
 .Card .card_one {
   background-image: linear-gradient(to right bottom, #06255c, #2a333d);

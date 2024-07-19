@@ -24,7 +24,7 @@ header {
 .main {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 40px;
 }
 
 .navbar {
@@ -55,7 +55,7 @@ header {
   }
   .dropdown-menu {
     background-color: #ffffff;
-    padding: 1rem 3rem;
+    padding: 1.4rem;
     color: #617cec;
     font-size: 1.2rem;
     border: none;
@@ -445,6 +445,135 @@ header {
   background-color: #fff;
 }
 
+//Card Card_Plan
+
+.Card_Plan {
+  .Title {
+    h4 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}
+.Card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 40rem;
+  margin: 20px 0;
+
+  .Card_side {
+    height: 40rem;
+    transition: all 0.8s ease;
+    background-color: bisque;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .Image {
+      text-align: center;
+      padding-top: 20px;
+      img {
+        width: 150px;
+      }
+    }
+    .blue {
+      background-image: linear-gradient(to right bottom, #06255c, #2a333d);
+    }
+    .grenn {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+    }
+    .white {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+    }
+    .Details {
+      padding: 2rem;
+      ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+
+        li {
+          text-align: center;
+          font-size: 1.1rem;
+          padding: 1rem;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid #eee;
+          }
+        }
+      }
+    }
+  }
+
+  .Front {
+    background-color: white;
+  }
+
+  .Back {
+    background-color: rgb(0, 45, 128);
+    transform: rotateY(180deg);
+    position: relative;
+
+    .Card_price {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: whitesmoke;
+      .only {
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 100;
+      }
+      .Price {
+        color: #fff;
+        font-size: 5rem;
+        font-weight: 100;
+        margin-bottom: 4rem;
+      }
+    }
+    .Btn {
+      background-color: #f7f7f7;
+      color: rgb(39, 37, 37);
+      text-decoration: none;
+      padding: 1rem 3rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      &:hover {
+        background: linear-gradient(to right bottom, #06255c, #2a333d);
+        color: #fff;
+      }
+    }
+  }
+
+  .card_one {
+    background-image: linear-gradient(to right bottom, #06255c, #2a333d);
+  }
+
+  .card_Two {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  }
+
+  .card_Three {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  }
+
+  &:hover .Front {
+    transform: rotateY(180deg);
+  }
+  &:hover .Back {
+    transform: rotateY(0);
+  }
+}
+
 //Subscribe
 .Subscribe {
 }
@@ -633,9 +762,12 @@ p {
 
 //swiper
 .swipers {
-  .title {
+  .Title {
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
     text-align: center;
-    font-size: 1.5rem;
   }
 }
 .swiper {
